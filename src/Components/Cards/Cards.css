@@ -1,0 +1,73 @@
+.box_countdown .item {
+  width: 140px;
+}
+
+.box_countdown span:after,
+.box_countdown span:before {
+  content: "";
+  left: 100%;
+  margin-top: -6px;
+  margin-left: 4px;
+  position: absolute;
+  top: 50%;
+  width: 12px;
+  height: 12px;
+}
+
+.box_countdown ul {
+  margin: 0 0 0 -20px;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_countdown li {
+  margin: 0 0 20px;
+  padding-left: 20px;
+}
+
+.box_countdown .count {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  display: flex;
+  -ms-align-items: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.box_countdown .count h3 {
+  font-size: 60px;
+}
+
+.box_countdown span {
+  display: block;
+  text-align: center;
+  line-height: 50px;
+  color: #ddd;
+  letter-spacing: 1px;
+  position: relative;
+  font-weight: 700;
+}
+
+.box_countdown span:after {
+  display: block;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 100%;
+}
+
+.box_countdown span:before {
+  display: block;
+  color: var(--mc1);
+  opacity: 0.15;
+  border-radius: 100%;
+  box-shadow: 0 5px 20px;
+  transition: 0.3s;
+  z-index: -1;
+}
